@@ -1,0 +1,208 @@
+#pacman
+alias sps='sudo pacman -S'
+alias spr='sudo pacman -R'
+alias sprs='sudo pacman -Rs'
+alias sprdd='sudo pacman -Rdd'
+alias spqo='sudo pacman -Qo'
+alias spsii='sudo pacman -Sii'
+alias depends='function_depends'
+alias pacman='sudo pacman --color auto'
+alias update='sudo pacman -Syyu'
+alias upd='sudo pacman -Syyu'
+#pacman unlock
+alias unlock='sudo rm /var/lib/pacman/db.lck'
+alias rmpacmanlock='sudo rm /var/lib/pacman/db.lck'
+# paru as aur helper - updates everything
+alias pksyua='paru -Syu --noconfirm'
+alias upall='paru -Syu --noconfirm'
+alias upa='paru -Syu --noconfirm'
+#skip integrity check
+alias paruskip='paru -S --mflags --skipinteg'
+#get fastest mirrors in your neighborhood
+alias mirror='sudo reflector -f 30 -l 30 --number 10 --verbose --save /etc/pacman.d/mirrorlist'
+alias mirrord='sudo reflector --latest 30 --number 10 --sort delay --save /etc/pacman.d/mirrorlist'
+alias mirrors='sudo reflector --latest 30 --number 10 --sort score --save /etc/pacman.d/mirrorlist'
+alias mirrora='sudo reflector --latest 30 --number 10 --sort age --save /etc/pacman.d/mirrorlist'
+#our experimental - best option for the moment
+alias mirrorx='sudo reflector --age 6 --latest 20  --fastest 20 --threads 5 --sort rate --protocol https --save /etc/pacman.d/mirrorlist'
+alias mirrorxx='sudo reflector --age 6 --latest 20  --fastest 20 --threads 20 --sort rate --protocol https --save /etc/pacman.d/mirrorlist'
+alias ram='rate-mirrors --allow-root --disable-comments arch | sudo tee /etc/pacman.d/mirrorlist'
+alias rams='rate-mirrors --allow-root --disable-comments --protocol https arch  | sudo tee /etc/pacman.d/mirrorlist'
+#Recent Installed Packages
+# alias rip='expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -200 | nl'
+# alias riplong='expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -3000 | nl'
+#Cleanup orphaned packages
+alias cleanup='sudo pacman -Rns $(pacman -Qtdq)'
+# This will generate a list of explicitly installed packages
+alias list='sudo pacman -Qqe'
+#This will generate a list of explicitly installed packages without dependencies
+alias listt='sudo pacman -Qqet'
+# list of AUR packages
+alias listaur='sudo pacman -Qqem'
+# add > list at the end to write to a file
+# install packages from list
+# pacman -S --needed - < my-list-of-packages.txt
+
+# CoreUtil replacements
+alias cp='xcp'
+alias cat='bat'
+alias grep='rg'
+alias ls='lsd -AL --permission octal --color always --group-directories-first --icon always --icon-theme fancy --total-size'
+alias sl=ls
+alias null='/dev/null'
+alias compress='function_compress'
+alias extract='function_extract'
+
+# dir
+alias cd='function_cd'
+alias home='cd ~'
+alias root='cd /'
+alias xtra='cd /xtr'
+alias storage='cd /str'
+alias ..='cd ..'
+alias ...='cd ..; cd ..'
+alias ....='cd ..; cd ..; cd ..'
+alias _='sudo '
+alias z='zi'
+alias ex='export'
+alias edit='micro'
+alias py='python'
+alias q='exit'
+alias c='clear'
+alias o='xdg-open'
+alias xbash='exec bash'
+alias ebash='micro ~/.bashrc'
+alias ef='_open_files_for_editing'     
+# 'ef' opens given file(s) for editing
+alias pacdiff='eos-pacdiff'
+alias isoinfo='ShowInstallerIsoInfo'
+#readable output
+alias df='df -h'
+
+#free
+alias free='free -mt'
+
+#continue download
+alias wget='wget -c'
+
+#userlist
+alias userlist='cut -d: -f1 /etc/passwd | sort'
+
+# add new fonts
+alias addfont='sudo fc-cache -fv; fc-cache -fv'
+
+# <<< kill commands <<<
+# quickly kill Hyprland
+alias killh='killall Hyprland'
+alias killw='killall waybar'
+alias killb='killall bash'
+alias killk='killall krita'
+alias killflrp='killall floorp'
+alias killwz='killall wezterm'
+alias killd='killall dolphin'
+alias killt='killall Thunar'
+
+#hardware info --short
+alias hw='hwinfo --short'
+#audio check pulseaudio or pipewire
+alias audio='pactl info | grep "Server Name"'
+#check vulnerabilities microcode
+alias microcode='grep . /sys/devices/system/cpu/vulnerabilities/*'
+#check cpu
+alias cpu='cpuid -i | grep uarch | head -n 1'
+#clear
+alias clean='clear; seq 1 $(tput cols) | sort -R | sparklines | lolcat'
+alias memclr='sync; _ echo 1 | _ tee /proc/sys/vm/drop_caches | sparklines | lolcat'
+alias memnuke='sync; _ echo 3 | _ tee /proc/sys/vm/drop_caches | sparklines | lolcat'
+#ps
+alias psa='ps auxf'
+alias psgrep='ps aux | grep -v grep | grep -i -e VSZ -e'
+# monitor
+alias mon='_ btop || _ htop'
+
+#search content with ripgrep
+alias rg='rg --sort path'
+
+#get the error messages from journalctl
+alias jctl='journalctl -p 3 -xb'
+
+#micro for important configuration files
+#know what you do in these files
+alias nlxdm='sudo $EDITOR /etc/lxdm/lxdm.conf'
+alias nlightdm='sudo $EDITOR /etc/lightdm/lightdm.conf'
+alias npacman='sudo $EDITOR /etc/pacman.conf'
+alias nmirrorlist='sudo $EDITOR /etc/pacman.d/mirrorlist'
+alias narcomirrorlist='sudo $EDITOR /etc/pacman.d/arcolinux-mirrorlist'
+alias nsddm='sudo $EDITOR /etc/sddm.conf'
+alias nsddmk='sudo $EDITOR /etc/sddm.conf.d/kde_settings.conf'
+alias nfstab='sudo $EDITOR /etc/fstab'
+alias nnsswitch='sudo $EDITOR /etc/nsswitch.conf'
+alias nsamba='sudo $EDITOR /etc/samba/smb.conf'
+alias ngnupgconf='sudo $EDITOR /etc/pacman.d/gnupg/gpg.conf'
+alias nhosts='sudo $EDITOR /etc/hosts'
+alias nhostname='sudo $EDITOR /etc/hostname'
+alias nresolv='sudo $EDITOR /etc/resolv.conf'
+alias nb='$EDITOR ~/.bashrc'
+alias nz='$EDITOR ~/.zshrc'
+alias nf='$EDITOR ~/.config/fish/config.fish'
+alias nneofetch='$EDITOR ~/.config/neofetch/config.conf'
+alias nplymouth='sudo $EDITOR /etc/plymouth/plymouthd.conf'
+alias nvconsole='sudo $EDITOR /etc/vconsole.conf'
+
+#gpg
+#verify signature for isos
+alias gpg-check='gpg2 --keyserver-options auto-key-retrieve --verify'
+alias fix-gpg-check='gpg2 --keyserver-options auto-key-retrieve --verify'
+#receive the key of a developer
+alias gpg-retrieve='gpg2 --keyserver-options auto-key-retrieve --receive-keys'
+alias fix-gpg-retrieve='gpg2 --keyserver-options auto-key-retrieve --receive-keys'
+alias fix-keyserver='[ -d ~/.gnupg ] || mkdir ~/.gnupg ; cp /etc/pacman.d/gnupg/gpg.conf ~/.gnupg/ ; echo 'done''
+
+#maintenance
+alias big='expac -H M "%m\t%n" | sort -h | nl'
+
+#hblock (stop tracking with hblock)
+#use unhblock to stop using hblock
+alias unhblock='hblock -S none -D none'
+
+#systeminfo
+alias probe='sudo -E hw-probe -all -upload'
+alias sysfailed='systemctl list-units --failed'
+
+#shutdown or reboot
+alias shutup='sudo shutdown now'
+
+#give the list of all installed desktops - xsessions desktops
+alias xd='ls /usr/share/xsessions'
+alias xdw='ls /usr/share/wayland-sessions'
+
+#git
+alias rmgitcache='rm -r ~/.cache/git'
+alias grh='git reset --hard'
+alias g='git'
+alias st='git status'
+alias com='git commit -m'
+alias stash='git stash'
+alias gadd='git add -u'
+alias add='git add .'
+alias clone='git clone'
+
+#pamac
+alias pamac-unlock='sudo rm /var/tmp/pamac/dbs/db.lock'
+
+#endeavouros
+alias ef='_open_files_for_editing'     
+# 'ef' opens given file(s) for editing
+alias pacdiff='eos-pacdiff'
+
+# Dracut
+alias idrac='dracut-rebuild'
+alias ikern='reinstall-kernels'
+
+# Docker
+alias dpull='_ docker pull'
+alias drun='_ docker run'
+alias dstart='_ docker start'
+alias drm='_ docker rm'
+alias datt='_ docker attach'
+alias dls='_ docker container list --all'

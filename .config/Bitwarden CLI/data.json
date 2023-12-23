@@ -1,0 +1,20 @@
+{
+  "stateVersion": 8,
+  "global": {
+    "theme": "system",
+    "window": {},
+    "environmentUrls": {
+      "base": null,
+      "api": null,
+      "identity": null,
+      "icons": null,
+      "notifications": null,
+      "events": null,
+      "webVault": null,
+      "keyConnector": null
+    },
+    "region": "US",
+    "installedVersion": "2023.9.1"
+  },
+  "appId": "7bf80ceb-48d7-4cfa-9b7b-ac10f569f7cb"
+}

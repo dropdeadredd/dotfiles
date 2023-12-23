@@ -1,0 +1,317 @@
+@define-color sumiInk       #1F1F28;
+@define-color winterBlue	  #252535;
+@define-color sumiInkb      #2A2A37;
+@define-color winterGreen 	#2B3328;
+@define-color waveBlueb   	#223249;
+@define-color waveBluea   	#2D4F67;
+@define-color sumiInkc    	#363646;
+@define-color winterRed   	#43242B;
+@define-color winterYellow	#49443C;
+@define-color sumiInkd    	#54546D;
+@define-color dragonBlue    #658594;
+@define-color katanaGray	  #717C7C;
+@define-color fujiGray      #727169;
+@define-color waveAqua    	#7AA89F;
+@define-color crystalBlue	  #7E9CD8;
+@define-color springBlue    #7FB4CA;
+@define-color autumnGreen   #76946A;
+@define-color springVioleta	#938AA9;
+@define-color oniViolet   	#957FB8;
+@define-color springVioletb	#9CABCA;
+@define-color springGreen	  #98BB6C;
+@define-color boatYellowa	  #938056;
+@define-color lightBlue	    #A3D4D5;
+@define-color boatYellowb	  #C0A36E;
+@define-color autumnRed   	#C34043;
+@define-color oldwhite	    #C8C093;
+@define-color fujiWhite	    #DCD7BA;
+@define-color autumnYellow  #DCA561;
+@define-color sakuraPink    #D27E99;
+@define-color carpYellow  	#E6C384;
+@define-color waveRed       #E46876;
+@define-color surimiOrange  #FFA066;
+@define-color roninYellow 	#FF9E3B;
+@define-color peachRed      #FF5D62;
+
+@define-color background @sumiInk;
+@define-color foreground @fujiWhite;
+@define-color border @fujiGray;
+@define-color bborder @sumiInkd;
+@define-color cborder @sumiInkc;
+@define-color butt @springBlue;
+@define-color buttone @springGreen;
+@define-color buttona @springVioleta;
+@define-color buttond @springVioletb;
+@define-color buttonc @autumnYellow;
+@define-color buttonb @waveRed;
+@define-color critical @autumnRed;
+@define-color gradient @winterBlue;
+@define-color gradiend @winterGreen;
+@define-color grad @boatYellowb;
+@define-color gradb @boatYellowa;
+@define-color gradc @oldWhite;
+@define-color compd @carpYellow;
+@define-color compc @sakuraPink;
+@define-color compa @crystalBlue;
+@define-color compb @oniViolet;
+
+main {
+    border: none;
+    border-radius: 0px;
+    /* `otf-font-awesome` is required to be installed for icons */
+    font-family: "JetbrainsMono Nerd Font";
+    font-weight: bold;
+    font-size: 11px;
+    min-height: 10px;
+}
+
+window.main#waybar {
+    background-color: transparent;
+    color: @foreground;
+    transition-property: background-color;
+    transition-duration: .5s;
+}
+
+window.main#waybar.hidden {
+    opacity: 0.2;
+}
+
+sysmon {
+    border: none;
+    border-radius: 0px;
+    /* `otf-font-awesome` is required to be installed for icons */
+    font-family: "JetbrainsMono Nerd Font";
+    font-weight: bold;
+    font-size: 11px;
+    min-height: 10px;
+}
+
+window.sysmon#waybar {
+  background-color: transparent;
+  color: @foreground;
+  transition-property: background-color;
+  transition-duration: .5s;
+}
+
+window.sysmon#waybar.hidden {
+  opacity: 0.2;
+}
+
+#workspaces button {
+    background: @buttonb;
+    color: @background;
+    border-radius: 20px;
+
+}
+
+/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
+#workspaces button:hover {
+    background: @buttonc;
+    color: @background;
+    border-bottom: 3px solid @bborder;
+
+}
+
+#workspaces button.focused {
+    background: @buttonf;
+}
+
+#workspaces button.focused:hover {
+    background: @buttond;
+    color: @background;
+    border-bottom: 3px solid @bborder;
+
+}
+
+#workspaces button.urgent {
+    background-color: @critical;
+}
+
+#mode {
+    background-color: @background;
+    border-bottom: 3px solid @bborder;
+}
+
+#taskbar{
+    background-color: @background;
+    padding: 0px;
+}
+
+#taskbar button {
+    box-shadow: none;
+	  text-shadow: none;
+    padding: 0px;
+    border-radius: 9px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    padding-left: 3px;
+    padding-right: 3px;
+    color: @foreground;
+    animation: gradient_f 20s ease-in infinite;
+    transition: all 0.5s cubic-bezier(.55,-0.68,.48,1.682);
+}
+
+#taskbar button.active {
+    background:  @background;
+    color: @compc;
+    margin-left: 3px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-right: 3px;
+    animation: gradient_f 20s ease-in infinite;
+    transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
+}
+
+#taskbar button:hover {
+    background: @critical;
+    color: @foreground;
+    padding-left: 3px;
+    padding-right: 3px;
+    animation: gradient_f 20s ease-in infinite;
+    transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
+}
+
+#cpu,
+#disk,
+#disk.xtr,
+#memory,
+#memory.swap,
+#temperature
+#bluetooth,
+#clock,
+#custom-weather,
+#network,
+#pulseaudio,
+#custom-launcher,
+#custom-power,
+#custom-updates,
+#taskbar,
+#tray,
+#mode,
+#taskbar{
+    padding-left: 4px;
+    padding-right: 4px;
+    color: @foreground;
+}
+
+#cpu,
+#disk,
+#disk.xtr,
+#memory,
+#memory.swap,
+#temperature {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+#window,
+#workspaces {
+    margin: 0px 4px;
+}
+
+#clock.date,
+#clock.time,
+#custom-weather {
+    background-color: @background;
+    color: @foreground;
+}
+
+#cpu,
+#memory,
+#memory.swap,
+#disk,
+#disk.xtr,
+#temperature {
+    background-color: @background;
+    color: @foreground;
+}
+
+#temperature.critical {
+    background-color: @background;
+    color: @critical;
+}
+
+#tray,
+#bluetooth,
+#custom-updates,
+#custom-launcher,
+#custom-power,
+#network,
+#pulseaudio {
+    background-color: @background;
+    color: @foreground;
+}
+
+#pulseaudio.muted,
+#network.disconnected {
+    background-color: @background;
+    color: @critical;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+    background-color: @background;
+    olor: @foreground;
+
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: @background;
+    color: @foreground;
+}
+
+#keyboard-state {
+    background: rgba(0, 0, 0, 0.5);
+    color: @foreground;
+}
+
+#keyboard-state > label {
+    padding: 0px 5px;
+}
+
+label:focus {
+    background-color: @background;
+}
+
+#keyboard-state > label.locked {
+    -gtk-icon-effect: highlight;
+    background: rgba(0, 0, 0, 0.2);
+    color: @critical;
+}
+
+#custom-r_end {
+    border-radius: 0px 21px 21px 0px;
+    margin-right: 9px;
+    padding-right: 3px;
+}
+
+#custom-l_end {
+    border-radius: 21px 0px 0px 21px;
+    margin-left: 9px;
+    padding-left: 3px;
+}
+
+#custom-sr_end {
+    border-radius: 0px;
+    margin-right: 9px;
+    padding-right: 3px;
+}
+
+#custom-sl_end {
+    border-radius: 0px;
+    margin-left: 9px;
+    padding-left: 3px;
+}
+
+#custom-rr_end {
+    border-radius: 0px 7px 7px 0px;
+    margin-right: 9px;
+    padding-right: 3px;
+}
+
+#custom-rl_end {
+    border-radius: 7px 0px 0px 7px;
+    margin-left: 9px;
+    padding-left: 3px;
+}

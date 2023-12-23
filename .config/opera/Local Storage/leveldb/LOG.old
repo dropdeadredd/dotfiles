@@ -1,0 +1,30 @@
+2023/11/01-01:02:13.225 3 Reusing MANIFEST /home/deadri0t/.config/opera/Local Storage/leveldb/MANIFEST-000001
+2023/11/01-01:02:13.225 3 Recovering log #6
+2023/11/01-01:02:13.225 3 Reusing old log /home/deadri0t/.config/opera/Local Storage/leveldb/000006.log 
+2023/11/01-07:04:23.304 3 Level-0 table #10: started
+2023/11/01-07:04:23.306 3 Level-0 table #10: 8903 bytes OK
+2023/11/01-07:04:23.307 3 Delete type=0 #6
+2023/11/01-13:18:00.304 2e0 Level-0 table #12: started
+2023/11/01-13:18:00.306 2e0 Level-0 table #12: 8809 bytes OK
+2023/11/01-13:18:00.307 2e0 Delete type=0 #9
+2023/11/01-16:00:11.288 380 Level-0 table #14: started
+2023/11/01-16:00:11.290 380 Level-0 table #14: 51137 bytes OK
+2023/11/01-16:00:11.291 380 Delete type=0 #11
+2023/11/01-16:05:24.304 3 Level-0 table #16: started
+2023/11/01-16:05:24.305 3 Level-0 table #16: 69863 bytes OK
+2023/11/01-16:05:24.307 3 Delete type=0 #13
+2023/11/01-16:05:24.307 3 Compacting 4@0 + 1@1 files
+2023/11/01-16:05:24.309 3 Generated table #17@0: 31 keys, 66507 bytes
+2023/11/01-16:05:24.309 3 Compacted 4@0 + 1@1 files => 66507 bytes
+2023/11/01-16:05:24.309 3 compacted to: files[ 0 1 1 0 0 0 0 ]
+2023/11/01-16:05:24.310 3 Delete type=2 #10
+2023/11/01-16:05:24.310 3 Delete type=2 #12
+2023/11/01-16:05:24.310 3 Delete type=2 #14
+2023/11/01-16:05:24.310 3 Delete type=2 #7
+2023/11/01-16:05:24.310 3 Delete type=2 #16
+2023/11/01-16:07:24.304 3 Level-0 table #19: started
+2023/11/01-16:07:24.305 3 Level-0 table #19: 88172 bytes OK
+2023/11/01-16:07:24.307 3 Delete type=0 #15
+2023/11/01-16:07:33.304 383 Level-0 table #21: started
+2023/11/01-16:07:33.305 383 Level-0 table #21: 110756 bytes OK
+2023/11/01-16:07:33.306 383 Delete type=0 #18

@@ -1,0 +1,54 @@
+{
+   "action": {
+      "default_icon": "icons/icon_32.png",
+      "default_popup": "html/popup.html",
+      "default_title": "__MSG_extension_name__"
+   },
+   "background": {
+      "service_worker": "scripts/background.js"
+   },
+   "content_scripts": [ {
+      "js": [ "scripts/content-script.js" ],
+      "matches": [ "\u003Call_urls>" ]
+   } ],
+   "declarative_net_request": {
+      "rule_resources": [ {
+         "enabled": true,
+         "id": "rule1",
+         "path": "rules1.json"
+      } ]
+   },
+   "default_locale": "en",
+   "description": "__MSG_extension_description__",
+   "host_permissions": [ "http://*/*", "https://*/*" ],
+   "icons": {
+      "128": "icons/icon_128.png",
+      "16": "icons/icon_16.png",
+      "24": "icons/icon_24.png",
+      "32": "icons/icon_32.png",
+      "48": "icons/icon_48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAydtkZ8xHkTvRaKhty7AIm5il/0v/ca4jcfqES0P46KWjpvF2qjrwUkpw47CRXcgvqoIbVuRf29A/dHjl7tayXL0xFiNuOAoEMmT55QoKkFOyTnyHYWPDYJgEe1jmfRfsKrgpBnanPespiNlXSSeqraqY+8JgX7EH2C54LI1a1Jnlgv9k/LG6RBXSUNDW9T6KQUr+gTsx8kJm00p1WWIHCIA5kDwaTH2NAg1L7ZAlyZBIx291dlwHfejKtf6S1nskFk9Zw/Yo9Yb+XBIZRUCKirAjVKNCaf0ZZ+kzJyUAgFJ+67/bpMHumyXhJ+afcKcrMzqimt+q2zRO+0BFJQVbkwIDAQAB",
+   "manifest_version": 3,
+   "name": "__MSG_extension_name__",
+   "permissions": [ "storage", "declarativeNetRequest", "gcm", "cookies", "activeTab" ],
+   "short_name": "__MSG_extension_short_name__",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0.1",
+   "web_accessible_resources": [ {
+      "matches": [ "http://*/*", "https://*/*" ],
+      "resources": [ "icons/browser_settings.png" ]
+   }, {
+      "matches": [ "http://*/*", "https://*/*" ],
+      "resources": [ "icons/domain_settings.png" ]
+   }, {
+      "matches": [ "http://*/*", "https://*/*" ],
+      "resources": [ "scripts/default_settings.js" ]
+   }, {
+      "matches": [ "http://*/*", "https://*/*" ],
+      "resources": [ "icons/icon_24.png" ]
+   }, {
+      "matches": [ "http://*/*", "https://*/*" ],
+      "resources": [ "icons/icon_32.png" ]
+   } ]
+}

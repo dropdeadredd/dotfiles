@@ -1,0 +1,6 @@
+require("aesthetic._catppucin")
+require("aesthetic._bufferline")
+require("aesthetic._alpha")
+require("aesthetic._lualine")
+require("aesthetic._nvim-tree")
+require("aesthetic._treesitter")

@@ -1,0 +1,86 @@
+[
+    {
+        "Name": "Smooth [Selective Gaussian]",
+        "command": "fx_smooth_selective",
+        "defaultParameters": [
+            "5",
+            "0.5",
+            "5",
+            "1",
+            "0",
+            "0",
+            "24",
+            "0",
+            "50,50"
+        ],
+        "defaultVisibilities": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            0
+        ],
+        "originalName": "Smooth [Selective Gaussian]",
+        "preview": "fx_smooth_selective_preview"
+    },
+    {
+        "Name": "Stamp",
+        "command": "fx_stamp",
+        "defaultParameters": [
+            "1",
+            "50",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "50,50"
+        ],
+        "defaultVisibilities": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            0
+        ],
+        "originalName": "Stamp",
+        "preview": "fx_stamp_preview"
+    },
+    {
+        "Name": "Smooth [Selective Gaussian] (2)",
+        "command": "fx_smooth_selective",
+        "defaultParameters": [
+            "5",
+            "0.5",
+            "5",
+            "1",
+            "0",
+            "0",
+            "24",
+            "0",
+            "50,50"
+        ],
+        "defaultVisibilities": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            0
+        ],
+        "originalName": "Smooth [Selective Gaussian]",
+        "preview": "fx_smooth_selective_preview"
+    }
+]

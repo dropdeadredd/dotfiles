@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+args=$1
+if [ "$args" -eq 1 ]; then
+  echo -n "$(free -h | awk '/M/{printf $1 $4}')"
+elif [ "$args" -eq 2 ]; then
+  echo -n "$(free -h | awk '/S/{printf $1 $4}')"
+elif [ "$args" -gt 3 ]; then
+  echo -n "$(free -h | awk '/T/{printf $1 $4}')"
+fi

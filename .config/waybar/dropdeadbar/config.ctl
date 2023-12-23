@@ -1,0 +1,1 @@
+0|31|bottom|(wlr/workspaces) (hyprland/window)|(clock)|(custom/updates disk memory cpu) (network bluetooth) (pulseaudio pulseaudio#microphone) (custom/power) (tray)

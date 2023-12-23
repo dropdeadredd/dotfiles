@@ -1,0 +1,44 @@
+{
+   "checksum": "5917152b888da29bb9701f8cf4d5ae80",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "date_added": "13336715375000000",
+            "date_last_used": "0",
+            "guid": "a510e92f-6067-4f03-a830-4a8dacda31b4",
+            "id": "5",
+            "name": "Getting Started",
+            "type": "url",
+            "url": "https://www.mozilla.org/firefox/?utm_medium=firefox-desktop&utm_source=bookmarks-toolbar&utm_campaign=new-users&utm_content=-global"
+         } ],
+         "date_added": "13341093062621483",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
+         "id": "1",
+         "name": "Bookmarks",
+         "type": "folder"
+      },
+      "other": {
+         "children": [  ],
+         "date_added": "13341093062621486",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "82b081ec-3dd3-529c-8475-ab6c344590dd",
+         "id": "2",
+         "name": "Other bookmarks",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [  ],
+         "date_added": "13341093062621489",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "4cf2e351-0e85-532b-bb37-df045d8f8d0f",
+         "id": "3",
+         "name": "Mobile bookmarks",
+         "type": "folder"
+      }
+   },
+   "version": 1
+}

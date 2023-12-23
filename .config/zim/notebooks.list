@@ -1,0 +1,23 @@
+[NotebookList]
+Default=
+1=~/Notebooks/dropdead.WiKi
+2=~/Notebooks/Roku
+3=~/Notebooks/Dotman in Bash
+
+[Notebook 1]
+uri=~/Notebooks/dropdead.WiKi
+name=dropdead.WiKi
+interwiki=None
+icon=None
+
+[Notebook 2]
+uri=~/Notebooks/Roku
+name=Roku
+interwiki=None
+icon=None
+
+[Notebook 3]
+uri=~/Notebooks/Dotman in Bash
+name=Dotman in Bash
+interwiki=None
+icon=None

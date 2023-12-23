@@ -1,0 +1,223 @@
+{
+  "wlr/taskbar": {
+        "format": "{icon}",
+        "icon-size": 18,
+        "icon-theme": "Papirus-Dark",
+        "tooltip-format": "{title}",
+        "on-click": "minimize",
+        "on-click-middle": "close",
+        "on-click-right": "activate"
+    },
+
+  "custom/launcher": {
+       "format": "<span color='#d8dee9'></span>",
+       "on-click": "wofi --show drun --insensitive --allow-images"
+      // "on-click": "rofi -show drun -theme ~/.config/rofi/global/rofi.rasi"
+  },
+
+  "clock#time": {
+        "format": " {:%I:%M%p}",
+        "tooltip": false
+  },
+
+  "clock#date": {
+        "format": "{:%A,%B %d}",
+        "tooltip-format": "<tt><small>{calendar}</small></tt>",
+        "calendar": {
+                    "mode": "month",
+                    "mode-mon-col": 3,
+                    "weeks-pos": "",
+                    "on-scroll": 1,
+                    "on-click-right": "mode",
+                    "format": {
+                              "days":       "<span color='#727169'><b>{}</b></span>",
+                              "weeks":      "<span color='#6A9589'><b>W{}</b></span>",
+                              "weekdays":   "<span color='#FFA066'><b>{}</b></span>",
+                              "today":      "<span color='#E46876'><b><u>{}</u></b></span>",
+                              "months":     "<span color='#DCD7BA'><b>{}</b></span>",
+                              "today":      "<span color='#E46876'><b><u>{}</u></b></span>"
+                    }
+        },
+        "actions":  {
+                    "on-click-right": "mode",
+                    "on-click-forward": "tz_up",
+                    "on-click-backward": "tz_down",
+                    "on-scroll-up": "shift_up",
+                    "on-scroll-down": "shift_down"
+         }
+    },
+
+    "custom/weather": {
+        "format": "{}",
+        "tooltip": true,
+        "interval": 1800,
+        "exec": "$HOME/.runthedots/.bin/wttr.py",
+        "return-type": "json"
+  },
+
+
+    "network": {
+        // "interface": "wlp2*", // (Optional) To force the use of this interface
+        "format-wifi": "{ifname} ({bandwidthDownBytes}%)",
+        "format-ethernet": "Connected  ",
+        "tooltip-format": "{essid} {ipaddr} ",
+        "format-linked": "{ifname} (No IP) ",
+        "format-disconnected": "Disconnected ⚠",
+        "format-alt": "{essid} {ipaddr}",
+        "on-click-right": "zsh nmtui"
+    },
+
+    "bluetooth": {
+        "format": "{status}",
+        "format-disabled": "  ", // an empty format will hide the module
+        "format-connected": " {num_connections}",
+        "on-click": "blueberry",
+        "tooltip-format": " {controller_alias}\t{controller_address}\n\n{num_connections} connected",
+        "tooltip-format-connected": " {controller_alias}\t{controller_address}\n\n{device_enumerate}",
+        "tooltip-format-enumerate-connected": " {device_alias}\t{device_address}"
+    },
+
+    "pulseaudio": {
+        // "scroll-step": 1, // %, can be a float
+        "format": "{volume}% {icon}",
+        "format-bluetooth": "{volume}% {icon}",
+        "format-bluetooth-muted": "{icon} {format_source}",
+        "format-muted": "{format_source}",
+        "format-source": "",
+        "format-source-muted": "",
+         "on-click": "pavucontrol",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", "", ""]
+        }
+    },
+
+    "custom/updates": {
+        "format": " : {}",
+        "exec": "sysupdate",
+        "on-click": "sysupdate up",
+        "interval": 1800, // once every hour
+        "min-length": 8,
+        "tooltip": true
+    },
+
+    "keyboard-state": {
+        "numlock": false,
+        "capslock": true,
+        "format": "{icon}",
+        "format-icons": {
+            "locked": "",
+            "unlocked": ""
+        }
+    },
+
+    "tray": {
+        "icon-size": 20,
+        "spacing": 10
+    },
+
+    "custom/power": {
+        "format": " {}",
+        "exec": "echo ; echo  logout",
+        "on-click": "wlogout -b 1 -c 0 -r 5 -m 300 -L 500 -R 500 --protocol layer-shell",
+        "interval" : 86400, // once every day
+        "tooltip": true
+    },
+
+    "cpu": {
+        "interval": 10,
+        "format": " {usage}%",
+        "format-alt": " {avg_frequency}Ghz",
+        "tooltip": true,
+        "tooltip-format": " {load}"
+    },
+
+    "memory": {
+        "interval": 30,
+        "format": " {percentage}%",
+        "format-alt": " {used}Gb",
+        "tooltip": true,
+        "tooltip-format": " {used:0.1f}gb/{total:0.1f}gb"
+    },
+
+    "memory#swap": {
+        "interval": 30,
+        "format": "󰘚 {swapPercentage}%",
+        "format-alt": "󰘚 {swapUsed}gb",
+        "tooltip": true,
+        "tooltip-format": "󰘚 {swapUsed:0.1f}gb/{swapTotal:0.1f}gb"
+    },
+
+    "disk": {
+        "path": "/",
+        "interval": 10,
+        "format": "󰋊:{percentage_used}%",
+        "tooltip": true,
+        "tooltip-format": "{path}: {used} of {total}"
+    },
+
+    "disk#xtr": {
+        "path": "/xtr",
+        "interval": 10,
+        "format": "󰋊:{percentage_used}%",
+        "tooltip": true,
+        "tooltip-format": "{path}: {used} of {total}"
+    },
+
+    "temperature": {
+        "thermal-zone": 2,
+        "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
+        "critical-threshold": 80,
+        "format-critical": "{temperatureF}°F {icon}",
+        "format": "{temperatureF}°F {icon}",
+        "format-icons": ["", "", ""]
+    },
+
+    "custom/l_end": {
+        "format": " ",
+        "interval" : "once",
+        "tooltip": false
+    },
+
+    "custom/r_end": {
+        "format": " ",
+        "interval" : "once",
+        "tooltip": false
+    },
+
+    "custom/sl_end": {
+        "format": " ",
+        "interval" : "once",
+        "tooltip": false
+    },
+
+    "custom/sr_end": {
+        "format": " ",
+        "interval" : "once",
+        "tooltip": false
+    },
+
+    "custom/rl_end": {
+        "format": " ",
+        "interval" : "once",
+        "tooltip": false
+    },
+
+    "custom/rr_end": {
+        "format": " ",
+        "interval" : "once",
+        "tooltip": false
+    },
+
+    "custom/padd": {
+        "format": "  ",
+        "interval" : "once",
+        "tooltip": false
+    }
+
+}

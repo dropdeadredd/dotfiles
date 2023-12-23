@@ -1,0 +1,7 @@
+2023/09/13-10:05:12.080 22e51 Reusing MANIFEST /home/dropdead/.config/google-chrome/Default/WebStorage/3/IndexedDB/indexeddb.leveldb/MANIFEST-000001
+2023/09/13-10:05:12.081 22e51 Recovering log #3
+2023/09/13-10:05:12.081 22e51 Reusing old log /home/dropdead/.config/google-chrome/Default/WebStorage/3/IndexedDB/indexeddb.leveldb/000003.log 
+2023/09/13-10:05:14.319 22e52 Level-0 table #5: started
+2023/09/13-10:05:14.321 22e52 Level-0 table #5: 13573 bytes OK
+2023/09/13-10:05:14.322 22e52 Delete type=0 #3
+2023/09/13-10:05:14.323 22e52 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

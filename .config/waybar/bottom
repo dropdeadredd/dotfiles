@@ -1,0 +1,160 @@
+{
+	"layer": "top",
+	"position": "bottom",
+	"passtrough": true,
+	"gtk-layer-shell": true,
+	"height": 0,
+	"spacing": 0,
+	"fixed-center": false,
+
+	"modules-left": [],
+	"modules-center": [],
+	"modules-right": ["keyboard-state","custom/updates","bluetooth","network","tray","cpu", "custom/cputemp", "temperature", "disk","disk#xtr","memory","memory#swap","custom/memory"],
+
+	"tray": {
+		"icon-size": 20,
+		"spacing": 10
+	
+	},
+	"network": {
+       // "interface": "wlp2*", // (Optional) To force the use of this interface
+		"format-wifi": "{ifname} ({bandwidthDownBytes})",
+		"format-ethernet": " {ipaddr} {bandwidthDownBytes} ",
+		"tooltip-format": "{essid} {ipaddr} ",
+		"format-linked": "{ifname} (No IP) ",
+		"format-disconnected": "Disconnected ⚠",
+		"format-alt": "{essid} {ipaddr}",
+		"on-click-right": "zsh nmtui"
+	},
+	"custom/updates": {
+		"format": " : {}",
+		"exec": "sysupdate",
+		"on-click": "sysupdate up",
+		"interval": 1800, // once every hour
+		"min-length": 8,
+		"tooltip": true
+	},
+
+	"bluetooth": {
+		"format": "{status}",
+		"format-disabled": "  ", // an empty format will hide the module
+		"format-connected": " {num_connections}",
+		"on-click": "blueberry",
+		"tooltip-format": " {controller_alias}\t{controller_address}\n\n{num_connections} connected",
+		"tooltip-format-connected": " {controller_alias}\t{controller_address}\n\n{device_enumerate}",
+		"tooltip-format-enumerate-connected": " {device_alias}\t{device_address}"
+	},
+
+	"keyboard-state": {
+		"numlock": false,
+		"capslock": true,
+		"format": "{icon}",
+		"format-icons": {
+			"locked": "",
+            "unlocked": ""
+		}
+	},
+
+	"cpu": {
+		"interval": 10,
+		"format": " {usage}%",
+		"format-alt": " {avg_frequency}Ghz",
+		"tooltip": true,
+		"tooltip-format": " {load}"
+	},
+
+  "custom/cputemp":{
+       "exec": "cpu-temp",
+       "interval": 1,
+       "on-click": "~/.config/waybar/scripts/btop.sh"
+	},
+
+  "temperature": {
+		"thermal-zone": 2,
+		"hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
+		"critical-threshold": 80,
+		"format-critical": "{temperatureF}°F {icon}",
+		"format": "{temperatureF}°F {icon}",
+		"format-icons": ["", "", ""]
+	},
+
+  "disk": {
+		"path": "/",
+		"interval": 10,
+		"format": "󰋊:{percentage_used}%",
+		"tooltip": true,
+		"tooltip-format": "{path}: {used} of {total}"
+	},
+
+  "disk#xtr": {
+		"path": "/xtr",
+		"interval": 10,
+		"format": "󰋊:{percentage_used}%",
+		"tooltip": true,
+		"tooltip-format": "{path}: {used} of {total}"
+	},
+
+  "memory": {
+		"interval": 30,
+		"format": " {percentage}%",
+		"format-alt": " {used}Gb",
+		"tooltip": true,
+		"tooltip-format": " {used:0.1f}gb/{total:0.1f}gb"
+	},
+
+  "memory#swap": {
+		"interval": 30,
+		"format": "󰘚 {swapPercentage}%",
+		"format-alt": "󰘚 {swapUsed}gb",
+		"tooltip": true,
+		"tooltip-format": "󰘚 {swapUsed:0.1f}gb/{swapTotal:0.1f}gb"
+	},
+
+  "custom/memory":{
+		"exec": "chkmem",
+		"interval": 1,
+		"on-click": "~/.config/waybar/scripts/htop.sh"
+	},
+
+  "custom/l_end": {
+		"format": " ",
+		"interval" : "once",
+		"tooltip": false
+	},
+
+  "custom/r_end": {
+		"format": " ",
+		"interval" : "once",
+		"tooltip": false
+	},
+
+  "custom/sl_end": {
+		"format": " ",
+		"interval" : "once",
+		"tooltip": false
+	},
+
+  "custom/sr_end": {
+		"format": " ",
+		"interval" : "once",
+		"tooltip": false
+	},
+
+  "custom/rl_end": {
+		"format": " ",
+		"interval" : "once",
+		"tooltip": false
+	},
+
+  "custom/rr_end": {
+		"format": " ",
+		"interval" : "once",
+		"tooltip": false
+	},
+
+  "custom/padd": {
+		"format": "  ",
+		"interval" : "once",
+		"tooltip": false
+	}
+}

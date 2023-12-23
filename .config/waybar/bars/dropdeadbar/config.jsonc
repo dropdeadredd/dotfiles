@@ -1,0 +1,253 @@
+{
+// sourced from header module //
+
+    "layer": "top",
+    "position": "top",
+    "mod": "dock",
+    "height": 38,
+    "exclusive": true,
+    "passthrough": false,
+    "gtk-layer-shell": true,
+
+
+// positions generated based on config.ctl //
+
+	"modules-left": ["custom/padd","custom/rl_end","clock","custom/rr_end","custom/rl_end","hyprland/workspaces","custom/rr_end","custom/padd"],
+	"modules-center": [],
+	"modules-right": ["custom/padd","custom/rl_end","cpu","memory","custom/swap","disk","disk#xtr","custom/rr_end","custom/rl_end","tray","network","bluetooth","custom/updates","pulseaudio","custom/power","custom/rr_end","custom/padd"],
+
+// sourced from modules based on config.ctl //
+
+    "cpu": {
+        "interval": 10,
+        "format": " {usage}%",
+        "format-alt": "{icon0}{icon1}{icon2}{icon3}{icon4}{icon5}{icon6}{icon7}{icon8}",
+        "format-icons": ["▁","▂","▃","▄","▅","▆","▇","█"]
+    },
+    "memory": {
+        "interval": 30,
+        "format": " {percentage}%",
+        "format-alt": " {used}gb",
+        "max-length": 10,
+        "tooltip": true,
+        "tooltip-format": " {used:0.1f}gb/{total:0.1f}gb"
+    },
+    "memory#swap": {
+        "interval": 30,
+        "format": "󰘚 {swappercentage}%",
+        "format-alt": "󰘚 {swapused}gb",
+        "max-length": 10,
+        "tooltip": true,
+        "tooltip-format": "󰘚 {swapused:0.1f}gb/{swaptotal:0.1f}gb"
+    },
+    "disk": {
+        "path": "/",
+        "interval": 10,
+        "format": "󰋊:{percentage_used}%",
+        "tooltip": true,
+        "tooltip-format": "{path}: {used} of {total}"
+    },
+    "disk#xtr": {
+        "path": "/xtr",
+        "interval": 10,
+        "format": "󰋊:{percentage_used}%",
+        "tooltip": true,
+        "tooltip-format": "{path}: {used} of {total}"
+    },
+    "clock": {
+        "format": " {:%A %I:%M%p}",
+        "format-alt": " {:%A,%B %d,%Y(%R)}",
+        "tooltip-format": "<tt><small>{calendar}</small></tt>",
+        "calendar": {
+                    "mode": "month",
+                    "mode-mon-col": 3,
+                    "weeks-pos": "",
+                    "on-scroll": 1,
+                    "on-click-right": "mode",
+                    "format": {
+                              "months":     "<span color='#ffead3'><b>{}</b></span>",
+                              "days":       "<span color='#ecc6d9'><b>{}</b></span>",
+                              "weeks":      "<span color='#99ffdd'><b>W{}</b></span>",
+                              "weekdays":   "<span color='#ffcc66'><b>{}</b></span>",
+                              "today":      "<span color='#ff6699'><b><u>{}</u></b></span>"
+                              }
+                    },
+        "actions":  {
+                    "on-click-right": "mode",
+                    "on-click-forward": "tz_up",
+                    "on-click-backward": "tz_down",
+                    "on-scroll-up": "shift_up",
+                    "on-scroll-down": "shift_down"
+                    }
+    },
+
+    "hyprland/workspaces": {
+        "format": "{icon}",
+        "disable-scroll": false,
+        "all-outputs": true,
+        "active-only": false,
+		    "on-click": "activate",
+        "on-click-middle": "close",
+        "on-scroll-up": "hyprctl dispatch workspace e+1" ,
+        "on-scroll-down": "hyprctl dispatch workspace e-1",
+		    "sort-by-number": true,
+        "format-icons": {
+            "1": "󰌫",
+            "2": "󰌫",
+            "3": "󰌫",
+            "4": "󰌫",
+            "5": "󰌫",
+            "6": "󰌫",
+            "7": "󰌫",
+            "8": "󰌫",
+            "9": "󰌫",
+            "active": "󰌬",
+            "empty": "󰌭"
+        },
+        "persistent-workspaces": { }
+    },
+
+    "hyprland/window": {
+        "format": "  {}",
+        "separate-outputs": true,
+        "rewrite": {
+            "dropdead@rxlxbx:(.*)": "$1 ",
+            "(.*) — floorp": "$1 󰈹",
+            "(.*)floorp": "floorp 󰈹",
+            "(.*) - visual studio code": "$1 󰨞",
+            "(.*)visual studio code": "code 󰨞",
+            "(.*) — thunar": "$1 󰉋",
+            "(.*)thunar": "thunar 󰉋"
+          }
+    },
+
+    "network": {
+        "format": "{icon} {bandwidthdownbytes}",
+        "format-alt": "{icon} {signalstrength}%",
+        "format-wifi": "{icon} {bandwidthdownbytes}",
+        "format-ethernet": "{icon} {bandwidthdownbytes}",
+        "format-disconnected": "{icon}",
+        "tooltip": true,
+        "tooltip-format": "{icon} {essid} {ipaddr}",
+        "tooltip-format-wifi": "{icon} {essid}{ipaddr}",
+        "tooltip-format-ethernet": "{icon} {ipaddr}",
+        "tooltio-format-disconnected": "",
+        "interval": 5,
+        "on-click": "nmtui",
+        "format-icons": {
+            "wifi": "",
+            "ethernet": "󰈀",
+            "linked": "󱘖",
+            "disconnected": ""
+        }
+    },
+
+    "bluetooth": {
+        "format": "{status}",
+        "format-disabled": "  ", // an empty format will hide the module
+        "format-connected": " {num_connections}",
+        "on-click": "blueberry",
+        "tooltip-format": " {controller_alias}\t{controller_address}\n\n{num_connections} connected",
+        "tooltip-format-connected": " {controller_alias}\t{controller_address}\n\n{device_enumerate}",
+        "tooltip-format-enumerate-connected": " {device_alias}\t{device_address}"
+    },
+
+    "pulseaudio": {
+        "format": "{icon} {volume}",
+        "format-muted": "婢",
+        "on-click": "pavucontrol -t 3",
+        "on-click-middle": "volumecontrol -i m",
+        "on-scroll-up": "volumecontrol -i i",
+        "on-scroll-down": "volumecontrol -i d",
+        "tooltip-format": "{icon} {desc} // {volume}%",
+        "scroll-step": 5,
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["","",""]
+        }
+    },
+
+    "pulseaudio#microphone": {
+        "format": "{format_source}",
+        "format-source": "",
+        "format-source-muted": "",
+        "on-click": "pavucontrol -t 4",
+        "on-click-middle": "volumecontrol -i m",
+        "on-scroll-up": "volumecontrol -i i",
+        "on-scroll-down": "volumecontrol -i d",
+        "tooltip-format": "{format_source} {source_desc} // {source_volume}%",
+        "scroll-step": 5
+    },
+
+    "custom/updates": {
+        "format": ":{}",
+        "exec": "sysupdate",
+        "on-click": "sysupdate up",
+        "interval": 1800, // once every hour
+        "tooltip": true
+    },
+
+    "tray": {
+        "icon-size": 18,
+        "spacing": 5,
+        "tooltip": true
+    },
+
+    "custom/power": {
+        "format": " {}",
+        "exec": "echo ; echo  logout",
+        "on-click": "wlogout -b 1 -c 0 -r 0 -l 530 -r 530 -t 100 -b 100 --protocol layer-shell",
+        "interval" : 86400, // once every day
+        "tooltip": true
+    },
+
+    // modules for padding //
+
+    "custom/l_end": {
+        "format": " ",
+        "interval" : "once",
+        "tooltip": false
+    },
+
+    "custom/r_end": {
+        "format": " ",
+        "interval" : "once",
+        "tooltip": false
+    },
+
+    "custom/sl_end": {
+        "format": " ",
+        "interval" : "once",
+        "tooltip": false
+    },
+
+    "custom/sr_end": {
+        "format": " ",
+        "interval" : "once",
+        "tooltip": false
+    },
+
+    "custom/rl_end": {
+        "format": " ",
+        "interval" : "once",
+        "tooltip": false
+    },
+
+    "custom/rr_end": {
+        "format": " ",
+        "interval" : "once",
+        "tooltip": false
+    },
+
+    "custom/padd": {
+        "format": "  ",
+        "interval" : "once",
+        "tooltip": false
+    }
+
+}

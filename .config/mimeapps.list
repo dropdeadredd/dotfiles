@@ -1,0 +1,31 @@
+[Added Associations]
+text/x-matlab=nvim.desktop;
+application/x-shellscript=nvim.desktop;micro.desktop;
+x-scheme-handler/http=floorp.desktop;
+x-scheme-handler/https=floorp.desktop;
+x-scheme-handler/chrome=floorp.desktop;
+text/html=floorp.desktop;
+application/x-extension-htm=floorp.desktop;
+application/x-extension-html=floorp.desktop;
+application/x-extension-shtml=floorp.desktop;
+application/xhtml+xml=floorp.desktop;
+application/x-extension-xhtml=floorp.desktop;
+application/x-extension-xht=floorp.desktop;
+image/jpeg=feh.desktop;krita_jpeg.desktop;imv.desktop;swayimg.desktop;gcr-viewer.desktop;swappy.desktop;imv-dir.desktop;btop.desktop;
+text/plain=nvim.desktop;
+image/png=krita_png.desktop;swappy.desktop;
+application/toml=vim.desktop;
+application/x-zerosize=nvim.desktop;
+
+[Default Applications]
+x-scheme-handler/http=floorp.desktop
+x-scheme-handler/https=floorp.desktop
+x-scheme-handler/chrome=floorp.desktop
+text/html=floorp.desktop
+application/x-extension-htm=floorp.desktop
+application/x-extension-html=floorp.desktop
+application/x-extension-shtml=floorp.desktop
+application/xhtml+xml=floorp.desktop
+application/x-extension-xhtml=floorp.desktop
+application/x-extension-xht=floorp.desktop
+application/x-zerosize=nvim.desktop

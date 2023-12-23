@@ -1,0 +1,186 @@
+{
+   "action": {
+      "default_icon": {
+         "128": "icon128.plasmo.b89b7dfa.png",
+         "16": "icon16.plasmo.00ac8b83.png",
+         "32": "icon32.plasmo.9ad0c5b6.png",
+         "48": "icon48.plasmo.cae3a6b3.png",
+         "64": "icon64.plasmo.e4b604fc.png"
+      },
+      "default_popup": "popup.html"
+   },
+   "author": "Foyer",
+   "background": {
+      "service_worker": "static/background/index.js"
+   },
+   "commands": {
+      "_execute_action": {
+         "description": "Activate Merlin",
+         "suggested_key": {
+            "default": "Ctrl+M",
+            "mac": "Command+M"
+         }
+      },
+      "toggle_merlin": {
+         "description": "Run Merlin. (To be deprecated. Use Activate the extension instead)",
+         "suggested_key": {
+            "default": "Ctrl+Shift+Comma",
+            "mac": "Command+Shift+Comma"
+         }
+      }
+   },
+   "content_scripts": [ {
+      "css": [  ],
+      "js": [ "gSheet.58c8df99.js" ],
+      "matches": [ "https://docs.google.com/spreadsheets/d/*/**", "https://sheets.new/*/**" ]
+   }, {
+      "css": [  ],
+      "js": [ "gdbCodeEditor.a0e0cbd3.js" ],
+      "matches": [ "https://www.onlinegdb.com/" ]
+   }, {
+      "css": [  ],
+      "js": [ "rentryMarkdown.bd631f04.js" ],
+      "matches": [ "https://rentry.co/" ]
+   }, {
+      "css": [  ],
+      "js": [ "script.072ad72b.js" ],
+      "matches": [ "\u003Call_urls>" ]
+   }, {
+      "css": [ "font.9cdb0935.css" ],
+      "js": [ "chat.13fc66bf.js" ],
+      "matches": [ "https://*/*", "http://*/*", "\u003Call_urls>" ]
+   }, {
+      "css": [ "font.9cdb0935.css" ],
+      "js": [ "facebookStrip.c6d9f2e8.js" ],
+      "matches": [ "https://www.facebook.com/*", "https://business.facebook.com/*" ]
+   }, {
+      "css": [ "font.9cdb0935.css" ],
+      "js": [ "blogSummarizer.2ce55b42.js" ],
+      "matches": [ "https://*/*", "http://*/*", "\u003Call_urls>" ]
+   }, {
+      "css": [ "font.9cdb0935.css" ],
+      "js": [ "githubSummarizer.7f15af64.js" ],
+      "matches": [ "https://github.com/*" ]
+   }, {
+      "css": [ "font.9cdb0935.css" ],
+      "js": [ "gmailStrip.77abb0cd.js" ],
+      "matches": [ "https://mail.google.com/mail/*" ]
+   }, {
+      "css": [ "font.9cdb0935.css" ],
+      "js": [ "linkedinStrip.aef9c1fd.js" ],
+      "matches": [ "https://www.linkedin.com/*" ]
+   }, {
+      "css": [ "font.9cdb0935.css" ],
+      "js": [ "searchGPT.1e6fba12.js" ],
+      "matches": [ "https://www.google.com/search?*", "https://www.bing.com/search?*", "https://search.yahoo.com/search*", "https://*.search.yahoo.com/search*", "https://yandex.com/search/?*", "https://duckduckgo.com/?*", "https://www.baidu.com/s?*" ],
+      "run_at": "document_start"
+   }, {
+      "css": [ "font.9cdb0935.css" ],
+      "js": [ "merlinIconCTA.b003b64c.js" ],
+      "matches": [ "https://*/*", "http://*/*", "\u003Call_urls>" ]
+   }, {
+      "css": [ "font.9cdb0935.css" ],
+      "js": [ "outlookStrip.11919966.js" ],
+      "matches": [ "https://outlook.live.com/*", "https://outlook.office.com/*" ]
+   }, {
+      "css": [ "font.9cdb0935.css" ],
+      "js": [ "youtubeSummarizer.64042fcc.js" ],
+      "matches": [ "https://www.youtube.com/*" ]
+   }, {
+      "css": [ "font.9cdb0935.css" ],
+      "js": [ "twitterStrip.296849b0.js" ],
+      "matches": [ "https://twitter.com/*" ]
+   }, {
+      "css": [ "font.9cdb0935.css" ],
+      "js": [ "youtubeSummaryBtn.aa8eb47d.js" ],
+      "matches": [ "https://www.youtube.com/*" ]
+   }, {
+      "css": [ "font.9cdb0935.css" ],
+      "js": [ "codeSummarizer.a4b2155f.js" ],
+      "matches": [ "https://*/*", "http://*/*", "\u003Call_urls>" ]
+   }, {
+      "css": [ "font.9cdb0935.css" ],
+      "js": [ "youtubeCommentSectionBtn.61d12fcf.js" ],
+      "matches": [ "https://www.youtube.com/*" ]
+   }, {
+      "css": [ "font.9cdb0935.css" ],
+      "js": [ "tutorial.4f220030.js" ],
+      "matches": [ "https://outlook.live.com/*", "https://outlook.office.com/*", "https://www.linkedin.com/*", "https://mail.google.com/mail/*", "https://www.facebook.com/*", "https://business.facebook.com/*", "https://twitter.com/*" ]
+   }, {
+      "css": [ "font.9cdb0935.css" ],
+      "js": [ "youtubeSummaryBtnWithTweetify.6706ad98.js" ],
+      "matches": [ "https://www.youtube.com/*" ]
+   } ],
+   "default_locale": "en",
+   "description": "__MSG_extensionDescription__",
+   "externally_connectable": {
+      "matches": [ "https://*.getmerlin.in/*", "https://*.foyer.work/*", "http://localhost/*" ]
+   },
+   "host_permissions": [ "https://*/*" ],
+   "icons": {
+      "128": "icon128.plasmo.b89b7dfa.png",
+      "16": "icon16.plasmo.00ac8b83.png",
+      "32": "icon32.plasmo.9ad0c5b6.png",
+      "48": "icon48.plasmo.cae3a6b3.png",
+      "64": "icon64.plasmo.e4b604fc.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA2a6FF0Th4JsBMe1FecVgnuco8lM0ZSVibzthkdimeyjjx7K/hxkljoJVC9AKlk1fBmJKkDsr9VbLJKboP/2uN8kISn/iHgiBtmQRQEU0T0UgZKx8D10YeneZOIvpoAmM8MyEojJgkSgxn0632vEXYotur84Z8NPn3p51fNYh+UYL/fHcsNJSeGLQdtQqrlVtR+sIJ0MsLuSq/BKSEjFRvVXFaftMZfEUo7M1tcQ6rYGpcMIZSeTAlWR0cilo3sah0SlMO8k8ntzHjAmanISOMJ3j7W2NAR6bph1R3lC36biOj3GTIS+D5jY3GVDRfaHX8WwKM2yskrussyhMew9s1wIDAQAB",
+   "manifest_version": 3,
+   "name": "__MSG_extensionName__",
+   "options_ui": {
+      "open_in_tab": true,
+      "page": "options.html"
+   },
+   "permissions": [ "storage", "tabs", "contextMenus" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "6.5.6",
+   "web_accessible_resources": [ {
+      "matches": [ "https://*/*", "http://*/*", "\u003Call_urls>" ],
+      "resources": [ "HankenGrotesk-Regular.c415711c.woff2", "HankenGrotesk-Medium.ac43c1d5.woff2", "HankenGrotesk-SemiBold.4d99fa1d.woff2", "chat.e0c5be86.png", "chat.0a4c9654.png", "chat.30355837.png", "chat.f0600b31.png", "chat.9d24c31c.png", "chat.98ee31a0.css", "HankenGrotesk-Regular.c415711c.woff2", "HankenGrotesk-Medium.ac43c1d5.woff2", "HankenGrotesk-SemiBold.4d99fa1d.woff2" ]
+   }, {
+      "matches": [ "https://www.facebook.com/*", "https://business.facebook.com/*" ],
+      "resources": [ "HankenGrotesk-Regular.c415711c.woff2", "HankenGrotesk-Medium.ac43c1d5.woff2", "HankenGrotesk-SemiBold.4d99fa1d.woff2", "chat.98ee31a0.css", "HankenGrotesk-Regular.c415711c.woff2", "HankenGrotesk-Medium.ac43c1d5.woff2", "HankenGrotesk-SemiBold.4d99fa1d.woff2" ]
+   }, {
+      "matches": [ "https://*/*", "http://*/*", "\u003Call_urls>" ],
+      "resources": [ "HankenGrotesk-Regular.c415711c.woff2", "HankenGrotesk-Medium.ac43c1d5.woff2", "HankenGrotesk-SemiBold.4d99fa1d.woff2", "chat.98ee31a0.css", "HankenGrotesk-Regular.c415711c.woff2", "HankenGrotesk-Medium.ac43c1d5.woff2", "HankenGrotesk-SemiBold.4d99fa1d.woff2" ]
+   }, {
+      "matches": [ "https://github.com/*" ],
+      "resources": [ "HankenGrotesk-Regular.c415711c.woff2", "HankenGrotesk-Medium.ac43c1d5.woff2", "HankenGrotesk-SemiBold.4d99fa1d.woff2", "chat.98ee31a0.css", "HankenGrotesk-Regular.c415711c.woff2", "HankenGrotesk-Medium.ac43c1d5.woff2", "HankenGrotesk-SemiBold.4d99fa1d.woff2" ]
+   }, {
+      "matches": [ "https://mail.google.com/*" ],
+      "resources": [ "HankenGrotesk-Regular.c415711c.woff2", "HankenGrotesk-Medium.ac43c1d5.woff2", "HankenGrotesk-SemiBold.4d99fa1d.woff2", "chat.98ee31a0.css", "HankenGrotesk-Regular.c415711c.woff2", "HankenGrotesk-Medium.ac43c1d5.woff2", "HankenGrotesk-SemiBold.4d99fa1d.woff2" ]
+   }, {
+      "matches": [ "https://www.linkedin.com/*" ],
+      "resources": [ "HankenGrotesk-Regular.c415711c.woff2", "HankenGrotesk-Medium.ac43c1d5.woff2", "HankenGrotesk-SemiBold.4d99fa1d.woff2", "chat.98ee31a0.css", "HankenGrotesk-Regular.c415711c.woff2", "HankenGrotesk-Medium.ac43c1d5.woff2", "HankenGrotesk-SemiBold.4d99fa1d.woff2" ]
+   }, {
+      "matches": [ "https://www.google.com/*", "https://www.bing.com/*", "https://search.yahoo.com/*", "https://*.search.yahoo.com/*", "https://yandex.com/*", "https://duckduckgo.com/*", "https://www.baidu.com/*" ],
+      "resources": [ "HankenGrotesk-Regular.c415711c.woff2", "HankenGrotesk-Medium.ac43c1d5.woff2", "HankenGrotesk-SemiBold.4d99fa1d.woff2", "chat.98ee31a0.css", "HankenGrotesk-Regular.c415711c.woff2", "HankenGrotesk-Medium.ac43c1d5.woff2", "HankenGrotesk-SemiBold.4d99fa1d.woff2" ]
+   }, {
+      "matches": [ "https://*/*", "http://*/*", "\u003Call_urls>" ],
+      "resources": [ "HankenGrotesk-Regular.c415711c.woff2", "HankenGrotesk-Medium.ac43c1d5.woff2", "HankenGrotesk-SemiBold.4d99fa1d.woff2", "chat.98ee31a0.css", "HankenGrotesk-Regular.c415711c.woff2", "HankenGrotesk-Medium.ac43c1d5.woff2", "HankenGrotesk-SemiBold.4d99fa1d.woff2" ]
+   }, {
+      "matches": [ "https://outlook.live.com/*", "https://outlook.office.com/*" ],
+      "resources": [ "HankenGrotesk-Regular.c415711c.woff2", "HankenGrotesk-Medium.ac43c1d5.woff2", "HankenGrotesk-SemiBold.4d99fa1d.woff2", "chat.98ee31a0.css", "HankenGrotesk-Regular.c415711c.woff2", "HankenGrotesk-Medium.ac43c1d5.woff2", "HankenGrotesk-SemiBold.4d99fa1d.woff2" ]
+   }, {
+      "matches": [ "https://www.youtube.com/*" ],
+      "resources": [ "HankenGrotesk-Regular.c415711c.woff2", "HankenGrotesk-Medium.ac43c1d5.woff2", "HankenGrotesk-SemiBold.4d99fa1d.woff2", "chat.98ee31a0.css", "HankenGrotesk-Regular.c415711c.woff2", "HankenGrotesk-Medium.ac43c1d5.woff2", "HankenGrotesk-SemiBold.4d99fa1d.woff2" ]
+   }, {
+      "matches": [ "https://twitter.com/*" ],
+      "resources": [ "HankenGrotesk-Regular.c415711c.woff2", "HankenGrotesk-Medium.ac43c1d5.woff2", "HankenGrotesk-SemiBold.4d99fa1d.woff2", "chat.98ee31a0.css", "HankenGrotesk-Regular.c415711c.woff2", "HankenGrotesk-Medium.ac43c1d5.woff2", "HankenGrotesk-SemiBold.4d99fa1d.woff2" ]
+   }, {
+      "matches": [ "https://www.youtube.com/*" ],
+      "resources": [ "HankenGrotesk-Regular.c415711c.woff2", "HankenGrotesk-Medium.ac43c1d5.woff2", "HankenGrotesk-SemiBold.4d99fa1d.woff2", "chat.98ee31a0.css", "HankenGrotesk-Regular.c415711c.woff2", "HankenGrotesk-Medium.ac43c1d5.woff2", "HankenGrotesk-SemiBold.4d99fa1d.woff2" ]
+   }, {
+      "matches": [ "https://*/*", "http://*/*", "\u003Call_urls>" ],
+      "resources": [ "HankenGrotesk-Regular.c415711c.woff2", "HankenGrotesk-Medium.ac43c1d5.woff2", "HankenGrotesk-SemiBold.4d99fa1d.woff2", "chat.98ee31a0.css", "HankenGrotesk-Regular.c415711c.woff2", "HankenGrotesk-Medium.ac43c1d5.woff2", "HankenGrotesk-SemiBold.4d99fa1d.woff2" ]
+   }, {
+      "matches": [ "https://www.youtube.com/*" ],
+      "resources": [ "HankenGrotesk-Regular.c415711c.woff2", "HankenGrotesk-Medium.ac43c1d5.woff2", "HankenGrotesk-SemiBold.4d99fa1d.woff2", "chat.98ee31a0.css", "HankenGrotesk-Regular.c415711c.woff2", "HankenGrotesk-Medium.ac43c1d5.woff2", "HankenGrotesk-SemiBold.4d99fa1d.woff2" ]
+   }, {
+      "matches": [ "https://outlook.live.com/*", "https://outlook.office.com/*", "https://www.linkedin.com/*", "https://mail.google.com/*", "https://www.facebook.com/*", "https://business.facebook.com/*", "https://twitter.com/*" ],
+      "resources": [ "HankenGrotesk-Regular.c415711c.woff2", "HankenGrotesk-Medium.ac43c1d5.woff2", "HankenGrotesk-SemiBold.4d99fa1d.woff2", "chat.98ee31a0.css", "HankenGrotesk-Regular.c415711c.woff2", "HankenGrotesk-Medium.ac43c1d5.woff2", "HankenGrotesk-SemiBold.4d99fa1d.woff2" ]
+   }, {
+      "matches": [ "https://www.youtube.com/*" ],
+      "resources": [ "HankenGrotesk-Regular.c415711c.woff2", "HankenGrotesk-Medium.ac43c1d5.woff2", "HankenGrotesk-SemiBold.4d99fa1d.woff2", "chat.98ee31a0.css", "HankenGrotesk-Regular.c415711c.woff2", "HankenGrotesk-Medium.ac43c1d5.woff2", "HankenGrotesk-SemiBold.4d99fa1d.woff2" ]
+   } ]
+}

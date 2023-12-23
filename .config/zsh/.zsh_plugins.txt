@@ -1,0 +1,52 @@
+#!/bin/zsh
+# .zsh_plugins.txt - antidote plugins file
+
+### Regular Plugins
+https://github.com/peterhurford/up.zsh
+https://github.com/rummik/zsh-tailf
+https://github.com/mattmc3/zman
+https://github.com/agkozak/zsh-z
+https://github.com/akash329d/zsh-alias-finder
+https://github.com/ChrisPenner/copy-pasta
+https://github.com/freed-wu/zsh-command-not-found
+https://github.com/zpm-zsh/colors
+https://github.com/wintermi/zsh-lsd 
+https://github.com/willghatch/zsh-snippets
+https://github.com/jedahan/ripz
+https://github.com/junker/zsh-archlinux
+https://github.com/wintermi/zsh-bob
+https://github.com/zshzoo/cd-ls
+
+### Local Plugins
+$ZDOTDIR/.aliases
+
+### Local Plugins with Variables
+# $ZSH_CUSTOM/plugins/nodejs
+# $ZSH_CUSTOM/plugins/python
+# $ZSH_CUSTOM/plugins/ruby
+
+### Utilities
+romkatv/zsh-bench kind:path
+
+### Frameworks
+ohmyzsh/ohmyzsh path:lib/clipboard.zsh
+ohmyzsh/ohmyzsh path:plugins/extract
+ohmyzsh/ohmyzsh path:plugins/starship
+ohmyzsh/ohmyzsh path:plugins/zoxide
+
+### Framework: zsh-utils
+belak/zsh-utils path:history
+belak/zsh-utils path:utility
+belak/zsh-utils path:editor
+
+### Syntax highlighting
+zdharma-continuum/fast-syntax-highlighting kind:defer
+
+### Completions
+zsh-users/zsh-completions path:src kind:fpath
+belak/zsh-utils path:completion
+
+### Final Plugins
+zsh-users/zsh-autosuggestions kind:defer
+zsh-users/zsh-history-substring-search
+

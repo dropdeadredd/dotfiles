@@ -1,0 +1,39 @@
+[ {
+  // MAIN BAR Settings
+    "name": "main",
+    "layer": "top",
+    "position": "top",
+    "mod": "dock",
+    "height": 30,
+    "spacing": 0,
+    "margin-top": 10,
+    "margin-bottom":5,
+    "passthrough": false,
+    "gtk-layer-shell": true,
+    // CONFIG files
+    "include": ["modules.jsonc"],
+
+    "modules-left":["custom/padd","custom/lr_end", "custom/launcher","wlr/taskbar","custom/rr_end","custom/padd"],
+    "modules-center":["custom/padd","custom/lr_end","clock#time","clock#date","custom/weather","custom/rr_end","custom/padd"],
+    "modules-right":["custom/padd","custom/lr_end","keyboard-state", "custom/updates", "bluetooth", "network","tray","pulseaudio","custom/power","custom/rr_end","custom/padd"]
+  },
+  {
+    "name": "sysmon",
+    "layer": "top",
+    "position": "bottom",
+    "mod": "dock",
+    "height": 20,
+    "spacing": 0,
+    "margin-top": 5,
+    "margin-bottom": 5,
+    "passthrough": false,
+    "gtk-layer-shell": true,
+
+    "include": ["modules.jsonc"],
+
+    "modules-left": [],
+    "modules-right": ["custom/padd","custom/lr_end","cpu","memory","memory#swap","disk","disk#xtr","temperature","custom/rr_end","custom/padd"],
+    "modules-center": []
+
+  }
+]

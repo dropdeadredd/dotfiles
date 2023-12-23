@@ -1,0 +1,6 @@
+2023/09/13-09:25:33.196 3 Reusing MANIFEST /home/dropdead/.config/google-chrome/Default/Local Storage/leveldb/MANIFEST-000001
+2023/09/13-09:25:33.197 3 Recovering log #3
+2023/09/13-09:25:33.197 3 Reusing old log /home/dropdead/.config/google-chrome/Default/Local Storage/leveldb/000003.log 
+2023/09/13-10:07:39.597 4 Level-0 table #5: started
+2023/09/13-10:07:39.601 4 Level-0 table #5: 136503 bytes OK
+2023/09/13-10:07:39.603 4 Delete type=0 #3

@@ -1,0 +1,104 @@
+{
+  "layer": "top",
+  "position": "left",
+  "height": 200,
+  "margin-left": 10,
+  "modules-center": ["wlr/workspaces", "custom/spotify", "network", "custom/vpn", "pulseaudio", "pulseaudio#percentage", "battery","battery#percentage", "custom/calendar-icon", "clock", "clock#date", "custom/time-icon", "clock#time"],
+    // Modules configuration
+  "wlr/workspaces": {
+	"format": "{icon}",
+    "on-click": "activate",
+    "sort-by-name": true,
+    "format-icons": {
+            "1": "",
+            "2": "",
+            "3": "",
+            "4": "",
+            "5": "",
+            "6": "",
+            "7": "",
+            "8": "",
+            "9": ""
+         }
+     },
+  "custom/spotify": {
+    "format": "",
+    "interval": 1,
+    "exec-if": "pgrep spotify",
+    "return-type": "json",
+    "on-click": "playerctl -p spotify play-pause",
+    "on-scroll-up": "playerctl -p spotify previous",
+    "on-scroll-down": "playerctl -p spotify next",
+    "tooltip": true,
+    "escape": true,
+    "exec": "/home/loki/bin/spotify.sh"
+  },
+  "network": {
+    "format-wifi": "",
+    "format-ethernet": "",
+    "format-linked": "{ifname} (No IP) ",
+    "format-disconnected": "",
+	"tooltip-format-wifi": "{essid}",
+	"tooltip-format-disconnected": "Disconnected"
+  },
+  "custom/vpn": {
+    "format": "{}",
+    "interval": 1,
+    "tooltip": false,
+    "exec": "/home/loki/bin/waybar-vpn.sh"
+  },
+  "pulseaudio": {
+	"on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+	"format": "{icon}",
+    "format-muted": "",
+    "format-icons": {
+        "headphone": "",
+        "hands-free": "",
+        "headset": "",
+        "phone": "",
+        "portable": "",
+        "car": "",
+        "default": ["", ""]
+    }
+  },
+  "pulseaudio#percentage": {
+	"on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+	"format": "{volume}"
+  },
+  "battery": {
+    "states": {
+        "warning": 30,
+        "critical": 15
+        },
+	"format": "{icon}",
+	"format-warning": "<span foreground='#98bb6c'>{icon}</span>",
+	"format-critical": "<span foreground='#e46876'>{icon}</span>",
+	"format-charging": "<span foreground='#98bb6c'></span>",
+	"format-plugged": "<span foreground='#98bb6c'></span>",
+	"format-full": "<span foreground='#98bb6c'></span>",
+    "format-icons": ["", "", "", "", ""]
+  },
+  "battery#percentage": {
+	"format": "{capacity}",
+    "tooltip-format": "{time}"
+  },
+  "custom/calendar-icon": {
+    "format": "",
+    "tooltip": false
+  },
+  "clock": {
+	"format": "{:%a}",
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+  },
+  "clock#date": {
+	"format": "{:%d}",
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+  },
+  "custom/time-icon": {
+    "format": "",
+    "tooltip": false
+  },
+  "clock#time": {
+	"format": "{:%H\n%M}"
+  }
+}

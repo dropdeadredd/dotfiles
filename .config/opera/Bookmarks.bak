@@ -1,0 +1,367 @@
+{
+   "checksum": "0b4380794860dda6535f1e10e5e5c364",
+   "roots": {
+      "bookmark_bar": {
+         "children": [  ],
+         "date_added": "13343288699587010",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
+         "id": "1",
+         "name": "Bookmarks bar",
+         "type": "folder"
+      },
+      "custom_root": {
+         "pinboard": {
+            "children": [  ],
+            "date_added": "13343288699587080",
+            "date_last_used": "0",
+            "date_modified": "0",
+            "guid": "00000000-0000-4000-a000-000000000907",
+            "id": "7",
+            "name": "Pinboard",
+            "type": "folder"
+         },
+         "speedDial": {
+            "children": [ {
+               "children": [ {
+                  "date_added": "13343288699775647",
+                  "date_last_used": "0",
+                  "guid": "a0ad9d53-2954-4e8c-af16-7516e6ef4cbe",
+                  "id": "11",
+                  "meta_info": {
+                     "favicon_url": "https://sd-images.operacdn.com/api/v1/images/19ea7f40b1ae613c104a34d808d66a2d5d42d752.png",
+                     "imageData": "https://sd-images.operacdn.com/api/v1/images/8627e20a3ff5d27d806ddf9da71152eec82ec4a2.png",
+                     "imageDataType": "2",
+                     "imageType": "2",
+                     "impression_url": "https://speeddials.opera.com/impressions/eyJhbGciOiJSU0EtT0FFUCIsImVuYyI6IkEyNTZDQkMtSFM1MTIifQ.XVYmjG1Qodzvq_MaDIrO3JDgKyxEqHMEJHMERzyFm3z0_OrcPw7Fw7B-q0ncKVEoQIPIihVHaba4tJdTfKSvop0K5RFbBRfjzPSBgURrMVLuRAPbtSH_gtnd9W0NP09fcbjUOevx403vOjR3HMtFUJD1UxKSjHA3JjQrPbGHF8EkdNNkgotmvrOP6ium4hp_inu6Un80lAagNZjj4nY4oaCbLBfWthtxNsKd2oGthKyjFC81rmemc_rrYAvvE9Ck1LCQPsT444DIopSiXrKMuzmGlCLZG7JQIe6ctGLXw06OddN9W2zW5eVzu9g4Rq8GbS3qQqvjosv0KPKynUsggQ.2uAic4MIP650hYKtZBYk4w.vq2di2fDoIpQgZVbfpBAwlRBwQfrKaiDvJb4wr1hpNaW6AsOrDTaE-bsYPlXtdpVPB8ZPiHSRZLFKaTphy03SQoczVqdKRuMePqpZ4XuexE-y72G9-VBuJN89dVsFVpzgvuP2_JiGYmVSK67m1_4unkVp8BKtNfNFBgHycrGaHBdHagm0Cqo4lBpRsIEG7vMVyLk3tiDF54UZB81IhNYy8beFqq71y0mi3xYzxfo9F-n8Tbls0CVJ4lOdIs8EqgD2L_0waK0F3W_-eQunrJm2QDfR6eei9KkHXBcZoAArMZHMowWXtNGmnYeq_Yz6mjTPyZAK2VbwBokck4yZYUetxzwo8zO2jeSd086df7Mt0kdhhUlL-1_h5W7iA9PcJ5whZB1LGIJZo_LCQfznuNuqu1vAsuCOEzSeU5mcuch-icK0-TyjJ8z-EbmWVcBZs3g6XpI3dS1Q_NGWs6Kxm0f6vEhF1gISk4VsLRMkT9In9aVsMQifTTgSaBdQxk3AdNH.0dArtG8cIw_696WzIiv_kQWicilNnSTuMBkCcyLNctU",
+                     "nav_timestamp": "1.698815099988035e+12",
+                     "partner_id": "admarket_amazon_us",
+                     "partner_image_download_url": "https://sd-images.operacdn.com/api/v1/images/8627e20a3ff5d27d806ddf9da71152eec82ec4a2.png",
+                     "partner_url": "https://operadesktoptiles.ampxdirect.com/?partner=operadesktoptiles&sub1=10188&sub2=operabrowser&ctaid=74301&match-methods=deterministic&v=1.3&source=als_tiles",
+                     "ping_url": "https://speeddials.opera.com/api/v2/ping/admarket_amazon_us",
+                     "replaceability": "0",
+                     "revision": "20230828",
+                     "server_position": "1"
+                  },
+                  "name": "Amazon",
+                  "type": "url",
+                  "url": "https://www.amazon.com/"
+               }, {
+                  "date_added": "13343288699776237",
+                  "date_last_used": "0",
+                  "guid": "e2aaa2a5-0e1f-4586-ac82-1dd8b5c80005",
+                  "id": "12",
+                  "meta_info": {
+                     "favicon_url": "https://sd-images.operacdn.com/api/v1/images/83205ee6633c4e7471b600e0bf42ff0aba1df25c.png",
+                     "imageData": "https://sd-images.operacdn.com/api/v1/images/3e0b5da0e976232819b743067e60d978f5830c88.png",
+                     "imageDataType": "2",
+                     "imageID": "BEAB0D49D4283EE9B4FA2EAC1CADED8E20346FA7A3994A4E9C961AFD8186CC90",
+                     "imageType": "2",
+                     "impression_url": "",
+                     "nav_timestamp": "1.698815099988035e+12",
+                     "partner_id": "ebay_us",
+                     "partner_image_download_url": "https://sd-images.operacdn.com/api/v1/images/3e0b5da0e976232819b743067e60d978f5830c88.png",
+                     "partner_url": "https://www.ebay.com/?mkcid=1&mkrid=711-53200-19255-0&siteid=0&campid=5337314645&customid=&toolid=10001&mkevt=1",
+                     "ping_url": "https://speeddials.opera.com/api/v2/ping/ebay_us",
+                     "replaceability": "0",
+                     "revision": "20221124",
+                     "server_position": "2"
+                  },
+                  "name": "eBay",
+                  "type": "url",
+                  "url": "http://www.ebay.com/"
+               }, {
+                  "date_added": "13343288699777431",
+                  "date_last_used": "0",
+                  "guid": "7fdf0fe3-a21f-41e1-9ad4-773d0f3b1786",
+                  "id": "13",
+                  "meta_info": {
+                     "favicon_url": "https://sd-images.operacdn.com/api/v1/images/e1db847af0a87787f307ee6942ed7d643488d419.png",
+                     "imageData": "https://sd-images.operacdn.com/api/v1/images/3a07ed8977c2b792f3940924aaac029238f92e71.png",
+                     "imageDataType": "2",
+                     "imageType": "2",
+                     "impression_url": "",
+                     "nav_timestamp": "1.698815099988035e+12",
+                     "partner_id": "booking_com_us",
+                     "partner_image_download_url": "https://sd-images.operacdn.com/api/v1/images/3a07ed8977c2b792f3940924aaac029238f92e71.png",
+                     "partner_url": "https://www.booking.com/index.html?aid=348192",
+                     "ping_url": "https://speeddials.opera.com/api/v2/ping/booking_com_us",
+                     "replaceability": "0",
+                     "revision": "20230704",
+                     "server_position": "3"
+                  },
+                  "name": "Booking.com",
+                  "type": "url",
+                  "url": "https://www.booking.com/"
+               }, {
+                  "date_added": "13343288699777908",
+                  "date_last_used": "0",
+                  "guid": "1f9e7612-2383-4ea8-9454-5f302f64e426",
+                  "id": "14",
+                  "meta_info": {
+                     "favicon_url": "https://www.google.com/s2/favicons?domain=consumercellular.com",
+                     "imageData": "https://sd-images.operacdn.com/api/v1/images/aca7a548302db9cefd4573fcb25bd85c0bb115c9.png",
+                     "imageDataType": "2",
+                     "imageType": "2",
+                     "impression_url": "",
+                     "nav_timestamp": "1.698815099988035e+12",
+                     "partner_id": "affinity_consumer_cellular",
+                     "partner_image_download_url": "https://sd-images.operacdn.com/api/v1/images/aca7a548302db9cefd4573fcb25bd85c0bb115c9.png",
+                     "partner_url": "https://ww55.affinity.net/sssdomweb?enk=cf3f5cb96b7c4a245300cebd453cbbc622bd07ffdfa5272fb5f699f8cc05710580db7bf4d586f00808f2844aaf88eba3d1a66eb1c0ef7535152b5baa0095e7e3a81fa983fe3670612ef7f412d567a152608d41ebedc67cfa8a85466ad155838d019a63067d8633baa92017e38e5d056218687b707d08a68504cdaf4dcf4f0b6d177ace365a97318795c6651a4a14944d2b63fb6dae9f3062404e8a7b213e54c37de05a932d1bb9d19cc5b9cb68379767&ccd=us&stc=&cin=&mcd=&cic=&kw=qldummy&renk=11098d4cdaefe63b9b8095b717c688dc8f2020fdc8833529b8f357bffed4c635763cb1fb8eaa1b89c11a4539c265514945c886fb5f7184fc6845bb452e760f1eccb29f0f4209439401b0270b59034a5f0ce3e92c0ff59c3d67258cf26323fea9",
+                     "ping_url": "https://speeddials.opera.com/api/v2/ping/affinity_consumer_cellular",
+                     "replaceability": "0",
+                     "revision": "1",
+                     "server_position": "4"
+                  },
+                  "name": "Consumer Cellular",
+                  "type": "url",
+                  "url": "https://consumercellular.com/"
+               }, {
+                  "date_added": "13343288699778927",
+                  "date_last_used": "0",
+                  "guid": "8b82614b-7bdf-4d7d-9493-5dda884cd4bf",
+                  "id": "15",
+                  "meta_info": {
+                     "favicon_url": "https://sd-images.operacdn.com/api/v1/images/7e8e809be0213d86707559aadcff17ad980bf8aa.png",
+                     "imageData": "https://sd-images.operacdn.com/api/v1/images/1fcbc2b315ab5055174e4a19b52b8593d9ec92ab.png",
+                     "imageDataType": "2",
+                     "imageType": "2",
+                     "impression_url": "",
+                     "nav_timestamp": "1.698815099988035e+12",
+                     "partner_id": "affinity_hulu",
+                     "partner_image_download_url": "https://sd-images.operacdn.com/api/v1/images/1fcbc2b315ab5055174e4a19b52b8593d9ec92ab.png",
+                     "partner_url": "https://ww55.affinity.net/sssdomweb?enk=cf3f5cb96b7c4a245300cebd453cbbc622bd07ffdfa5272f1a21a45f20ded13b62ae0b9a130c65cf335cc592d207335b3691f48d014b73020d0aa054ea96d7fc63faff331efb79b58a76d20d31cd85a19cee687b3b3797baef5591c7b44fac2ce0cbed53b882ee6297b1d2ba843ff0e3033e86a5ea30ed7ba10fd3dee49b3e7cab713ffa49fe35e97c3c77071bee9f3dd3c0f0103845ca2c92acbc610c5251c87e006b1661f58fe6843f8735a5c6a9f3&ccd=us&stc=&cin=&mcd=&cic=&kw=qldummy&renk=11098d4cdaefe63b9b8095b717c688dc8f2020fdc8833529b8f357bffed4c635763cb1fb8eaa1b895ca71983e786eab145c886fb5f7184fc6845bb452e760f1eccb29f0f4209439401b0270b59034a5f0ce3e92c0ff59c3d227af613e5f0cfa6",
+                     "ping_url": "https://speeddials.opera.com/api/v2/ping/affinity_hulu",
+                     "replaceability": "0",
+                     "revision": "1",
+                     "server_position": "12"
+                  },
+                  "name": "Hulu",
+                  "type": "url",
+                  "url": "https://hulu.com/"
+               }, {
+                  "date_added": "13343288699779818",
+                  "date_last_used": "0",
+                  "guid": "dbafd9a8-824e-47aa-bf56-59af8ab57532",
+                  "id": "16",
+                  "meta_info": {
+                     "favicon_url": "https://sd-images.operacdn.com/api/v1/images/e68d6aed5a71c8bf08435cccec050aba8ceec72f.png",
+                     "imageData": "https://sd-images.operacdn.com/api/v1/images/a17380dbb9b066104ce4eb1d65b601f100025a12.png",
+                     "imageDataType": "2",
+                     "imageType": "2",
+                     "impression_url": "",
+                     "nav_timestamp": "1.698815099988035e+12",
+                     "partner_id": "chess_us",
+                     "partner_image_download_url": "https://sd-images.operacdn.com/api/v1/images/a17380dbb9b066104ce4eb1d65b601f100025a12.png",
+                     "partner_url": "https://redirector.opera.com/redirect?type=syn&rid=719",
+                     "ping_url": "https://speeddials.opera.com/api/v2/ping/chess_us",
+                     "replaceability": "0",
+                     "revision": "20230630",
+                     "server_position": "17"
+                  },
+                  "name": "Chess.com",
+                  "type": "url",
+                  "url": "https://www.chess.com/"
+               }, {
+                  "date_added": "13343288699780625",
+                  "date_last_used": "0",
+                  "guid": "81d63697-304c-45fa-acea-507726b49929",
+                  "id": "17",
+                  "meta_info": {
+                     "favicon_url": "https://www.google.com/s2/favicons?domain=www.homedepot.com",
+                     "imageData": "https://sd-images.operacdn.com/api/v1/images/b3ccdcca5049aa966b0033326371eae7b7dcc57a.png",
+                     "imageDataType": "2",
+                     "imageID": "78B82EBA2B2392A221722A57898BD06151BBAB761B0E94DB45BA84B9F5308DDD",
+                     "imageType": "2",
+                     "impression_url": "",
+                     "nav_timestamp": "1.698815099988035e+12",
+                     "partner_id": "homedepot_us",
+                     "partner_image_download_url": "https://sd-images.operacdn.com/api/v1/images/b3ccdcca5049aa966b0033326371eae7b7dcc57a.png",
+                     "partner_url": "https://operadesktop.ampxdirect.com/thehomedepot?sub1=desktopbrowser&sub2=thehomedepot&sub3=tile",
+                     "ping_url": "https://speeddials.opera.com/api/v2/ping/homedepot_us",
+                     "replaceability": "0",
+                     "revision": "20231031",
+                     "server_position": "18"
+                  },
+                  "name": "The Home Depot",
+                  "type": "url",
+                  "url": "https://www.homedepot.com/"
+               }, {
+                  "date_added": "13343288699781461",
+                  "date_last_used": "0",
+                  "guid": "8ccc26e2-7c26-4065-bc03-159bef059581",
+                  "id": "18",
+                  "meta_info": {
+                     "favicon_url": "https://sd-images.operacdn.com/api/v1/images/d0cd95159f6be002d53afe0b66ed149caf219e89.png",
+                     "imageData": "https://sd-images.operacdn.com/api/v1/images/1244538bfcc56f43b62d0b8334c4a52faecf8f2a.png",
+                     "imageDataType": "2",
+                     "imageID": "D8CA80CD94ED9E66FBEBCC2650837959F63683592F2A6CE66248672AF86BA4F2",
+                     "imageType": "2",
+                     "impression_url": "",
+                     "nav_timestamp": "1.698815099988035e+12",
+                     "partner_id": "tmobile_us",
+                     "partner_image_download_url": "https://sd-images.operacdn.com/api/v1/images/1244538bfcc56f43b62d0b8334c4a52faecf8f2a.png",
+                     "partner_url": "https://operadesktop.ampxdirect.com/tmobile.com?sub1=desktopbrowser&sub2=tmobilepostpaid&sub3=tile",
+                     "ping_url": "https://speeddials.opera.com/api/v2/ping/tmobile_us",
+                     "replaceability": "0",
+                     "revision": "20231031",
+                     "server_position": "19"
+                  },
+                  "name": "T-mobile",
+                  "type": "url",
+                  "url": "https://www.t-mobile.com/"
+               }, {
+                  "date_added": "13343288699782343",
+                  "date_last_used": "0",
+                  "guid": "46435abd-7175-4e18-927c-7dd0115ddb19",
+                  "id": "19",
+                  "meta_info": {
+                     "favicon_url": "https://sd-images.operacdn.com/api/v1/images/a183cd3c70caaaf2204aa5fa3959dba2bfda247a.png",
+                     "imageData": "https://sd-images.operacdn.com/api/v1/images/507c40932350a0092f0ebda36b9e47b9dfc82c40.png",
+                     "imageDataType": "2",
+                     "imageType": "2",
+                     "impression_url": "",
+                     "nav_timestamp": "1.698815099988035e+12",
+                     "partner_id": "affinity_lowes",
+                     "partner_image_download_url": "https://sd-images.operacdn.com/api/v1/images/507c40932350a0092f0ebda36b9e47b9dfc82c40.png",
+                     "partner_url": "https://ww55.affinity.net/sssdomweb?enk=cf3f5cb96b7c4a245300cebd453cbbc622bd07ffdfa5272f1a21a45f20ded13bb36a6092181860f0ca43c336421c60343691f48d014b73020d0aa054ea96d7fc63faff331efb79b58a76d20d31cd85a1457a4bbe7a75681720d05cb28d0de7b5e0cbed53b882ee6297b1d2ba843ff0e3033e86a5ea30ed7ba10fd3dee49b3e7cab713ffa49fe35e980cd7f10a3e0313fd3c0f0103845ca2c92acbc610c5251c87e006b1661f58fe6843f8735a5c6a9f3&ccd=us&stc=&cin=&mcd=&cic=&kw=qldummy&renk=11098d4cdaefe63b9b8095b717c688dc8f2020fdc8833529b8f357bffed4c635763cb1fb8eaa1b8914a4fbe71a3cbaf945c886fb5f7184fc6845bb452e760f1eccb29f0f4209439401b0270b59034a5f0ce3e92c0ff59c3d9315c563e627d302",
+                     "ping_url": "https://speeddials.opera.com/api/v2/ping/affinity_lowes",
+                     "replaceability": "0",
+                     "revision": "1",
+                     "server_position": "20"
+                  },
+                  "name": "Lowes",
+                  "type": "url",
+                  "url": "https://lowes.com/"
+               }, {
+                  "date_added": "13343288699782789",
+                  "date_last_used": "0",
+                  "guid": "0989a7e2-5ee0-4226-b62f-b3bcb7d2993f",
+                  "id": "20",
+                  "meta_info": {
+                     "favicon_url": "https://sd-images.operacdn.com/api/v1/images/107b7a16069456b5c211059ef3abefa9fae89050.png",
+                     "imageData": "https://sd-images.operacdn.com/api/v1/images/e3a2edebcbd9f271ca14bd9b9a40fd911d076ae6.png",
+                     "imageDataType": "2",
+                     "imageType": "2",
+                     "impression_url": "",
+                     "nav_timestamp": "1.698815099988035e+12",
+                     "partner_id": "affinity_walmart",
+                     "partner_image_download_url": "https://sd-images.operacdn.com/api/v1/images/e3a2edebcbd9f271ca14bd9b9a40fd911d076ae6.png",
+                     "partner_url": "https://ww55.affinity.net/sssdomweb?enk=cf3f5cb96b7c4a245300cebd453cbbc622bd07ffdfa5272f276a49e0d9b54340bcfb90634a3d10e1b02644a6b1ad86cfd1a66eb1c0ef7535152b5baa0095e7e3a81fa983fe367061ddd1b86d8e39e3d1cea2fa2f7a676c082ac5a772c0d0f089019a63067d8633baa92017e38e5d056218687b707d08a68504cdaf4dcf4f0b6d177ace365a97318795c6651a4a14944d2b63fb6dae9f3062404e8a7b213e54c37de05a932d1bb9d19cc5b9cb68379767&ccd=us&stc=&cin=&mcd=&cic=&kw=qldummy&renk=11098d4cdaefe63b9b8095b717c688dc8f2020fdc8833529b8f357bffed4c635763cb1fb8eaa1b89d4957f757577a62345c886fb5f7184fc6845bb452e760f1eccb29f0f4209439401b0270b59034a5f0ce3e92c0ff59c3d3e08f6763cd99980",
+                     "ping_url": "https://speeddials.opera.com/api/v2/ping/affinity_walmart",
+                     "replaceability": "0",
+                     "revision": "1",
+                     "server_position": "21"
+                  },
+                  "name": "Walmart",
+                  "type": "url",
+                  "url": "https://walmart.com/"
+               }, {
+                  "date_added": "13343288699783870",
+                  "date_last_used": "0",
+                  "guid": "90c44063-f496-4549-8fbf-2646253861df",
+                  "id": "21",
+                  "meta_info": {
+                     "favicon_url": "https://www.google.com/s2/favicons?domain=www.bestbuy.com",
+                     "imageData": "https://sd-images.operacdn.com/api/v1/images/38f8ca2bea706c8b07f12ea022b00288d7ba28d5.png",
+                     "imageDataType": "2",
+                     "imageID": "FA9882DAB53A650FC568EB4DDF766BAF12E29B250ED75BFAF8AF354A9FC12A74",
+                     "imageType": "2",
+                     "impression_url": "",
+                     "nav_timestamp": "1.698815099988035e+12",
+                     "partner_id": "bestbuy_us",
+                     "partner_image_download_url": "https://sd-images.operacdn.com/api/v1/images/38f8ca2bea706c8b07f12ea022b00288d7ba28d5.png",
+                     "partner_url": "https://click.validclick.net/rdr2.php?aff=opera&q=best+buy&cmp=78699&url=https://www.bestbuy.com/",
+                     "ping_url": "https://speeddials.opera.com/api/v2/ping/bestbuy_us",
+                     "replaceability": "0",
+                     "revision": "20230116",
+                     "server_position": "22"
+                  },
+                  "name": "Best Buy",
+                  "type": "url",
+                  "url": "https://www.bestbuy.com/"
+               } ],
+               "date_added": "13343288699700434",
+               "date_last_used": "0",
+               "date_modified": "13343288699783870",
+               "guid": "44eb2f9b-387e-4af7-b73e-1584588fffcc",
+               "id": "10",
+               "meta_info": {
+                  "speed_dial_root_folder_guid": "f3ad5363-003b-4360-8bd8-f14e638ae2b0"
+               },
+               "name": "nixos",
+               "type": "folder"
+            } ],
+            "date_added": "13343288699587077",
+            "date_last_used": "0",
+            "date_modified": "0",
+            "guid": "00000000-0000-4000-a000-000000000904",
+            "id": "6",
+            "name": "Speed Dials",
+            "type": "folder"
+         },
+         "trash": {
+            "children": [  ],
+            "date_added": "13343288699587083",
+            "date_last_used": "0",
+            "date_modified": "0",
+            "guid": "00000000-0000-4000-a000-000000000905",
+            "id": "9",
+            "name": "Trash",
+            "type": "folder"
+         },
+         "unsorted": {
+            "children": [  ],
+            "date_added": "13343288699587074",
+            "date_last_used": "0",
+            "date_modified": "0",
+            "guid": "00000000-0000-4000-a000-000000000901",
+            "id": "4",
+            "name": "Unsorted bookmarks",
+            "type": "folder"
+         },
+         "unsyncedPinboard": {
+            "children": [  ],
+            "date_added": "13343288699587082",
+            "date_last_used": "0",
+            "date_modified": "0",
+            "guid": "00000000-0000-4000-a000-000000000908",
+            "id": "8",
+            "name": "Unsynchronized Pinboard",
+            "type": "folder"
+         },
+         "userRoot": {
+            "children": [  ],
+            "date_added": "13343288699587076",
+            "date_last_used": "0",
+            "date_modified": "0",
+            "guid": "00000000-0000-4000-a000-000000000902",
+            "id": "5",
+            "name": "Other bookmarks",
+            "type": "folder"
+         }
+      },
+      "other": {
+         "children": [  ],
+         "date_added": "13343288699587012",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "82b081ec-3dd3-529c-8475-ab6c344590dd",
+         "id": "2",
+         "name": "Imported bookmarks",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [  ],
+         "date_added": "13343288699587012",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "4cf2e351-0e85-532b-bb37-df045d8f8d0f",
+         "id": "3",
+         "name": "Mobile bookmarks",
+         "type": "folder"
+      }
+   },
+   "version": 1
+}

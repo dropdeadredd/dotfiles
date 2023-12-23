@@ -1,0 +1,57 @@
+#!/bin/zsh
+#
+# .aliases - Set whatever shell aliases you want.
+#
+
+# single character aliases - be sparing!
+# tar
+alias tarls="tar -tvf"
+alias untar="tar -xf"
+# coreutils
+alias g='git'
+alias ls='lsd -AL --color auto --icon always --icon-theme fancy --group-directories-first --total-size'
+alias lp='lsd -AL1l --permission octal --icon always --color auto --icon-theme fancy --total-size'
+alias l='ls'
+alias sl='ls'
+alias cd..="cd .."
+alias quit='exit'
+alias nv='nvim'
+alias edit='nvim'
+alias suedit='_ micro'
+alias cp='xcp'
+alias rgrep='rg'
+alias cats='bat'
+alias nil='/dev/null'
+alias home='cd ~'
+alias root='cd /'
+alias ext='cd /xtr'
+alias backup='cd /str'
+alias _='sudo'
+alias please='sudo'
+alias q='quit'
+alias x='exit'
+alias c='clear'
+alias addfont='fc-cache -fv'
+alias find='find . -type d -name'
+alias findf='find . -type f -name'
+# system monitoring
+alias cpu='cpuid | rgrep uarch | head -n 1'
+alias mem='echo -e 'free\n' | free -h | awk '/m/{printf $1 $3}'; echo -e 'used\n' | free -h | awk '/m/{printf $1 $4}''
+alias swap='echo -e 'free\n' | free -h | awk '/s/{printf $1 $3}'; echo -e 'used\n' |  free -h | awk '/s/{printf $1 $4}''
+alias monitor='sudo btop || sudo htop'
+alias jctl='journalctl -p 3 -xb'
+alias sysfail='systemctl list-units --failed'
+# git
+alias gitrcach='rm -rf ~/.cache/git/'
+alias gitrese='git reset --hard'
+alias urldecode='python3 -c "import sys, urllib.parse as ul; \
+  print(ul.unquote_plus(sys.argv[1]))"'
+alias urlencode='python3 -c "import sys, urllib.parse as ul; \
+  print(ul.quote_plus(sys.argv[1]))"'
+alias zshrc='${EDITOR:-nvim} "${ZDOTDIR:-$HOME}"/.zshrc'
+alias zdot='cd ${ZDOTDIR:-~}'
+# misc
+alias please=sudo
+alias zbench='for i in {-1..10}; do /usr/bin/time zsh -lic exit; done'
+
+

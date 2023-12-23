@@ -1,0 +1,20 @@
+{
+  "stateVersion": 8,
+  "global": {
+    "theme": "system",
+    "window": {},
+    "environmentUrls": {
+      "base": null,
+      "api": null,
+      "identity": null,
+      "icons": null,
+      "notifications": null,
+      "events": null,
+      "webVault": https://vault.bitwarden.com,
+      "keyConnector": null
+    },
+    "region": "US",
+    "installedVersion": "2023.9.1"
+  },
+  "appId": "98041b6b-4f95-4153-b5c2-280b6800df9d"
+}

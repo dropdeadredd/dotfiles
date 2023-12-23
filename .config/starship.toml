@@ -1,0 +1,69 @@
+format = """
+[░▒▓](#C4746E)[ 󰚌 ](bg:#C4746E fg:#090c0c)[]\
+(bg:#8EA4A2 fg:#C4746E)${custom.updates}[]\
+(fg:#8EA4A2 bg:#E6C384)$git_branch$git_status[]\
+(fg:#E6C384 bg:#8A9A7B)$python[]\
+(fg:#8A9A7B bg:#A292A3)$memory_usage[]\
+(fg:#A292A3 bg:#A6A69C)$directory[ ]\
+(fg:#A6A69C)\
+\n$time$character"""
+
+add_newline = false
+
+[line_break]
+disabled = true 
+
+[character]
+success_symbol = '[%](#C9C5C9)'
+error_symbol = '[%](#E46876)'
+
+[directory]
+style = "fg:#090C0C bg:#A6A69C"
+format = "[ $path ]($style)"
+truncation_length = 3
+truncation_symbol = "…/"
+
+[directory.substitutions]
+"dotfiles" = "󰑑"
+".config" = ""
+"Downloads" = " "
+"xtr" = ""
+"Pictures" = "󰸉"
+"str" = ""
+"Dev" = "󰵮"
+".git" = ""
+
+[memory_usage]
+symbol = ""
+threshold = 50
+style = "bg:#A292A3"
+format  =  '[[ ($symbol:$ram_pct $symbol:$swap_pct) ](fg:#090C0C bg:#A292A3 )]($style)'
+disabled = false
+
+[git_branch]
+symbol = ""
+style = "bg:#E6C384"
+format = '[[ $symbol $branch ](fg:#090C0C bg:#E6C384)]($style)'
+
+[git_status]
+style = "bg:#E6C384"
+format = '[[($all_status$ahead_behind )](fg:#090C0C bg:#E6C384)]($style)'
+
+[python]
+symbol = "󱔎"
+style = "bg:#8A9A7B"
+format = '[[ $symbol ($version) ](fg:#090C0C bg:#8A9A7B)]($style)'
+
+[custom.update1z]
+symbol = ""
+style = "bg:#8EA4A2"
+format = '[$symbol($output)]($style)'
+when = true
+command = "starupd"
+ignore_timeout = true
+
+[time]
+disabled = false
+time_format = "%a %-I:%M%P" # Hour:Minute Format
+style = "#C9C5C9"
+format = '[$time  ]($style)'
